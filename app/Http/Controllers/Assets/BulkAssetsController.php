@@ -52,9 +52,15 @@ class BulkAssetsController extends Controller
         }
 
         $asset_ids = $request->input('ids');
+
         if ($request->input('bulk_actions') === 'checkout') {
             $request->session()->flashInput(['selected_assets' => $asset_ids]);
             return redirect()->route('hardware.bulkcheckout.show');
+        }
+
+        if ($request->input('bulk_actions') === 'maintenance') {
+            $request->session()->flashInput(['selected_assets' => $asset_ids]);
+            return redirect()->route('maintenances.create');
         }
 
         // Figure out where we need to send the user after the update is complete, and store that in the session
