@@ -89,9 +89,6 @@ trait Loggable
         $log->note = $note;
         $log->action_date = $action_date;
 
-        if (! $log->action_date) {
-            $log->action_date = date('Y-m-d H:i:s');
-        }
 
         $changed = [];
         $array_to_flip = array_keys($fields_array);
