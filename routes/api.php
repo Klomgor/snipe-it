@@ -1094,6 +1094,14 @@ Route::group(['prefix' => 'v1', 'middleware' => ['api', 'api-throttle:api']], fu
                 ]
             )->name('api.users.me');
 
+            Route::get('{user}/eulas',
+                [
+                    Api\UsersController::class,
+                    'eulas'
+                ]
+            )->name('api.user.eulas');
+
+
             Route::get('list/{status?}',
             [
                 Api\UsersController::class, 
