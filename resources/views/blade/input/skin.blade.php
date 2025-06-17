@@ -25,7 +25,7 @@
     ];
 
     if ($includeBlankOption) {
-        $formats = ['' => 'Site Default'] + $formats;
+        $formats = ['' => trans('general.skins.site_default')] + $formats;
     }
 @endphp
 
