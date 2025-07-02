@@ -9,6 +9,8 @@ return [
     'ad_append_domain_help'     => 'От потребителя не се изисква да въвежда "username@domain.local", достатъчно е да напише само "username".',
     'admin_cc_email'            => 'CC електронна поща',
     'admin_cc_email_help'       => 'Изпращай копие на известията за вписване/изписване на следния е-майл адрес.',
+    'admin_cc_always' => 'Always send copy upon checkin/checkout',
+    'admin_cc_when_acceptance_required' => 'Only send copy upon checkout if acceptance is required',
     'admin_settings'            => 'Админ настройки',
     'is_ad'				        => 'Това е активна директория на сървър',
     'alerts'                	=> 'Известия',
@@ -155,6 +157,7 @@ return [
     'scope_locations_fmcs_support_text'  => 'Подружка на множество местоположения и много фирми',
     'scope_locations_fmcs_support_help_text'  => 'Ограничи местоположенията до техните избрани фирми.',
     'scope_locations_fmcs_check_button' => 'Проверка за съвместимост',
+    'scope_locations_fmcs_test_needed' => 'Please Check Compatibility to enable this',
     'scope_locations_fmcs_support_disabled_text'  => 'Тази опция е забранена, защото имате конфликт на настройката на местоположение на :count или повече артикула.',
     'show_in_model_list'   => 'Показване в падащите менюта на моделите',
     'optional'					=> 'незадължително',
@@ -401,6 +404,9 @@ return [
     'due_checkin_days_help' => 'How many days before the expected checkin of an asset should it be listed in the "Due for checkin" page?',
     'no_groups' => 'No groups have been created yet. Visit <code>Admin Settings > Permission Groups</code> to add one.',
     'text' => 'Text',
+    'manager_view' => 'Manager View',
+    'manager_view_enabled_text' => 'Enable Manager View',
+    'manager_view_enabled_help' => 'Allow managers to view assigned items to their direct and indirect reports in their account view.',
 
     'username_formats' => [
         'username_format'		=> 'Формат на потребителско име',
@@ -410,7 +416,7 @@ return [
         'filastname_format'			=> 'First Initial Last Name (jsmith)',
         'lastnamefirstinitial_format' =>  'Last Name First Initial (smithj)',
         'firstname_lastname_underscore_format' => 'First Name Last Name (jane_smith)',
-        'firstinitial.lastname' => 'First Initial Last Name (j.smith)',
+        'firstinitial_lastname' => 'First Initial Last Name (j.smith)',
         'lastname_firstinitial' => 'Last Name First Initial (smith_j)',
         'lastname_dot_firstinitial_format' => 'Last Name First Initial (smith.j)',
         'firstnamelastname'     => 'First Name Last Name (janesmith)',
@@ -426,7 +432,7 @@ return [
         'filastname_format'			=> 'Инициал на името Фамилия (jsmith@example.com)',
         'lastnamefirstinitial_format' =>  'Фамилно име Инициал на собствено (smithj@example.com)',
         'firstname_lastname_underscore_format' => 'Име Фамилия (jane.smith@example.com)',
-        'firstinitial.lastname' => 'Първа буква от името и Фамилия (i.ivanov@example.com)',
+        'firstinitial_lastname' => 'Първа буква от името и Фамилия (i.ivanov@example.com)',
         'lastname_firstinitial' => 'Фамилия и Първа буква от име (ivanov_i@example.com)',
         'lastname_dot_firstinitial_format' => 'Last Name First Initial (smith.j@example.com)',
         'firstnamelastname'     => 'Име и Фамилия (ivan.ivanov@example.com)',
@@ -484,6 +490,7 @@ return [
         'php_overview'      => 'phpinfo, система, информация',
         'purge'             => 'изтриване за постоянно',
         'security'          => 'парола, парили, изисквания, двустепенна идентификация, двустепенна-идентификация, общи пароли, отдалечен вход, изход, идентификация',
+        'notifications'     => 'alerts, email, notifications, audit, threshold, email alerts, cc',
     ],
 
 ];

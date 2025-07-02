@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Аксессуар',
     'accessory_report'		=> 'Отчёт по аксессуарам',
     'action'                => 'Действие',
+    'action_date'			=> 'Дата выполнения',
     'activity_report'		=> 'Отчёт о деятельности',
     'address'				=> 'Адрес',
     'admin'					=> 'Настройки администратора',
+    'admin_user'			=> 'Пользователь с правами администратора',
     'admin_tooltip'			=> 'Этот пользователь имеет права администратора',
     'superuser'				=> 'Суперпользователь',
     'superuser_tooltip'		=> 'Этот пользователь имеет права суперпользователя',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Запрошено',
     'requested_date'        => 'Запрашиваемая дата',
     'requested_assets'      => 'Запрашиваемые активы',
-    'requested_assets_menu' => 'Запрошенные активы',
+    'requested_assets_menu' => 'Запрашиваемые элементы',
     'request_canceled'      => 'Запрос отменен',
     'request_item'          => 'Запросить этот элемент',
     'external_link_tooltip' => 'Внешняя ссылка на',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Метки статуса',
     'status'    			=> 'Статус',
     'accept_eula'           => 'Соглашение о приемке',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'Лицензионное соглашение с конечным пользователем',
     'show_or_hide_eulas' => 'Показать/скрыть EULA',
     'supplier'              => 'Поставщик',
     'suppliers'  			=> 'Поставщики',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Тип',
     'undeployable'			=> 'Не развертываемый',
     'unknown_admin'			=> 'Неизвестный администратор',
+    'unknown_user'          => 'Неизвестный пользователь',
     'username'              => 'Пользователь',
     'update'                => 'Обновить',
     'updating_item' => 'Обновление :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Непринятые активы',
     'users'                 => 'Пользователи',
     'viewall'				=> 'Посмотреть все',
-    'viewassets'  			=> 'Показать присвоенные активы',
-    'viewassetsfor'         => 'Список активов на :name',
+    'viewassets'  			=> 'Показать присвоенные элементы',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Сайт',
     'welcome'				=> 'Добро пожаловать, :name',
     'years'					=> 'Лет',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Фамилия менеджера',
         'manager_full_name' => 'Полное имя менеджера',
         'manager_username' => 'Имя пользователя',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Тип оформления заказа',
         'checkout_location' => 'Оформить заказ на адрес',
         'image_filename' => 'Имя файла изображения',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Источник действия',
     'or' => 'или',
     'url'                   => 'Адрес',
+    'phone'                   => 'Телефон',
+    'fax'                   => 'Факс',
+    'contact'                   => 'Контакт',
     'edit_fieldset' => 'Редактировать поля и параметры набора полей',
     'permission_denied_superuser_demo' => 'В разрешении отказано. Вы не можете обновить информацию пользователя для суперадминов в демо.',
     'pwd_reset_not_sent' => 'Пользователь не активирован, синхронизирован LDAP или не имеет адреса электронной почты',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Разрешить пользователям управлять своими паролями',
     'from' => 'От',
     'by' => 'Кем',
+    'version' => 'Версия',
+    'build' => 'Билд',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Не удалось создать список производителей. Производитель уже существует, и создание списка перезапишет его.|Не удалось создать список производителей. :count производителей уже существуют, и создание списка перезапишет их.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'Этот ID файла неверный',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

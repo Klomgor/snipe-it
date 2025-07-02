@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Accessoire',
     'accessory_report'		=> 'Accessoire Rapport',
     'action'                => 'Actie',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Activiteitenrapportage',
     'address'				=> 'Adres',
     'admin'					=> 'Beheerder Instellingen',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Deze gebruiker heeft beheerdersrechten',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'Deze gebruiker heeft superuser rechten',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Aangevraagd',
     'requested_date'        => 'Aangevraagde datum',
     'requested_assets'      => 'Aangevraagd activa',
-    'requested_assets_menu' => 'Aangevraagde activa',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Aanvraag geannuleerd',
     'request_item'          => 'Dit item aanvragen',
     'external_link_tooltip' => 'Externe link naar',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status label',
     'status'    			=> 'Status',
     'accept_eula'           => 'Aanvaarding overeenkomst',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'EULA\'s tonen/verbergen',
     'supplier'              => 'Leverancier',
     'suppliers'  			=> 'Leveranciers',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Type',
     'undeployable'			=> 'Niet-uitgeefbaar',
     'unknown_admin'			=> 'Onbekende Beheerder',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Gebruikersnaam',
     'update'                => 'Bijwerken',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Niet-geaccepteerde activa',
     'users'                 => 'Gebruikers',
     'viewall'				=> 'Toon alles',
-    'viewassets'  			=> 'Toegewezen activa tonen',
-    'viewassetsfor'         => 'Activa voor :name bekijken',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Website',
     'welcome'				=> 'Welkom :name',
     'years'					=> 'jaren',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Manager achternaam',
         'manager_full_name' => 'Volledige naam manager',
         'manager_username' => 'Manager gebruikersnaam',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Uitcheck type',
         'checkout_location' => 'Uitgecheckt naar locatie',
         'image_filename' => 'Bestandsnaam afbeelding',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Bron actie',
     'or' => 'of',
     'url'                   => 'URL',
+    'phone'                   => 'Telefoon',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Bewerk veldset velden en opties',
     'permission_denied_superuser_demo' => 'Toestemming geweigerd. U kunt geen gebruikersinformatie voor superadmins op de demo bijwerken.',
     'pwd_reset_not_sent' => 'Gebruiker is niet geactiveerd, wordt LDAP-gesynchroniseerd of heeft geen e-mailadres',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Gebruikers toestaan hun eigen wachtwoorden te beheren',
     'from' => 'Van',
     'by' => 'Door',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

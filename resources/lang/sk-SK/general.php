@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Príslušenstvo',
     'accessory_report'		=> 'Report píslušenstva',
     'action'                => 'Akcia',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Report aktivity',
     'address'				=> 'Adresa',
     'admin'					=> 'Admin nastavenia',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Tento používateľ má admin oprávnenia',
     'superuser'				=> 'Superadmin',
     'superuser_tooltip'		=> 'Tento používateľ má superadmin oprávnenia',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Vyžiadané',
     'requested_date'        => 'Dátum vyžiadania',
     'requested_assets'      => 'Vyžiadaný majetok',
-    'requested_assets_menu' => 'Vyžiadaný majetok',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Požiadavka zrušená',
     'request_item'          => 'Požiadať o túto položku',
     'external_link_tooltip' => 'Externé odkazy',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Stav',
     'status'    			=> 'Stav',
     'accept_eula'           => 'Licenčné podmienky',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Zobraziť/Skryť EULA',
     'supplier'              => 'Dodávateľ',
     'suppliers'  			=> 'Dodávatelia',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Typ',
     'undeployable'			=> 'Neodovzdateľné',
     'unknown_admin'			=> 'Neznámy admin',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Používateľské meno',
     'update'                => 'Aktualizovať',
     'updating_item' => 'Aktualizujem :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Nepotvrdené majetky',
     'users'                 => 'Používatelia',
     'viewall'				=> 'Zobraziť všetko',
-    'viewassets'  			=> 'Zobraziť priradený majetok',
-    'viewassetsfor'         => 'Zobraziť majetok pre :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Webstránka',
     'welcome'				=> 'Vitaj, :name',
     'years'					=> 'roky/ov',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Priezvisko manažéra',
         'manager_full_name' => 'Celé meno manažéra',
         'manager_username' => 'Používateľké meno manažéra',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Typ odovzdania',
         'checkout_location' => 'Odovzdané na lokalitu',
         'image_filename' => 'Názov obrázku',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Zdroj akcie',
     'or' => 'alebo',
     'url'                   => 'URL',
+    'phone'                   => 'Telefón',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Upraviť pole a možnosti sady polí',
     'permission_denied_superuser_demo' => 'Oprávnenie bolo zakázané. Nemôžete aktualizovať informácie o superadmin používateľoch v demo verzii.',
     'pwd_reset_not_sent' => 'Používateľ nie je aktivovaný, je synchronizovaný cez LDAP alebo nemá zadanú emailovú adresu',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Povoliť používateľom spravovať ich vlastné heslá',
     'from' => 'From',
     'by' => 'Podľa',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

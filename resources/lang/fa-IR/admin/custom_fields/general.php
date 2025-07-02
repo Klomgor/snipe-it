@@ -73,5 +73,11 @@ return [
     'display_checkin' => 'Display in checkin forms',
     'display_checkout' => 'Display in checkout forms',
     'display_audit' => 'Display in audit forms',
-
+    'types' => [
+        'text' => 'Text Box',
+        'listbox' => 'List Box',
+        'textarea' => 'Textarea (multi-line)',
+        'checkbox' => 'Checkbox',
+        'radio' => 'Radio Buttons',
+    ],
 ];

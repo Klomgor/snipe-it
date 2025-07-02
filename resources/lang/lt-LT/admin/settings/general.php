@@ -9,6 +9,8 @@ return [
     'ad_append_domain_help'     => 'Naudotojas neprivalo įvesti „naudotojovardas@domain.local“, jis gali tiesiog įvesti „naudotojovardas“.',
     'admin_cc_email'            => 'El. paštas kopijai',
     'admin_cc_email_help'       => 'Send a copy of checkin/checkout emails to this address.',
+    'admin_cc_always' => 'Always send copy upon checkin/checkout',
+    'admin_cc_when_acceptance_required' => 'Only send copy upon checkout if acceptance is required',
     'admin_settings'            => 'Administratoriaus nustatymai',
     'is_ad'				        => 'Tai yra Active Directory serveris',
     'alerts'                	=> 'Įspėjimai',
@@ -155,6 +157,7 @@ return [
     'scope_locations_fmcs_support_text'  => 'Scope Locations with Full Multiple Companies Support',
     'scope_locations_fmcs_support_help_text'  => 'Restrict locations to their selected company.',
     'scope_locations_fmcs_check_button' => 'Check Compatibility',
+    'scope_locations_fmcs_test_needed' => 'Please Check Compatibility to enable this',
     'scope_locations_fmcs_support_disabled_text'  => 'This option is disabled because you have conflicting locations set for :count or more items.',
     'show_in_model_list'   => 'Rodyti modelių išskleidžiamuosiuose meniu',
     'optional'					=> 'pasirinktinai',
@@ -401,6 +404,9 @@ return [
     'due_checkin_days_help' => 'Likus kiek dienų iki numatomo turto paėmimo, jis turėtų būti rodomas puslapyje „Laukia paėmimo“?',
     'no_groups' => 'Grupės dar nesukurtos. Apsilankykite <code>Administratoriaus nustatymai > Paskyros teisių grupės</code>, kad jų pridėtumėte.',
     'text' => 'Tekstas',
+    'manager_view' => 'Manager View',
+    'manager_view_enabled_text' => 'Enable Manager View',
+    'manager_view_enabled_help' => 'Allow managers to view assigned items to their direct and indirect reports in their account view.',
 
     'username_formats' => [
         'username_format'		=> 'Naudotojo vardo formatas',
@@ -410,7 +416,7 @@ return [
         'filastname_format'			=> 'First Initial Last Name (jsmith)',
         'lastnamefirstinitial_format' =>  'Last Name First Initial (smithj)',
         'firstname_lastname_underscore_format' => 'First Name Last Name (jane_smith)',
-        'firstinitial.lastname' => 'First Initial Last Name (j.smith)',
+        'firstinitial_lastname' => 'First Initial Last Name (j.smith)',
         'lastname_firstinitial' => 'Last Name First Initial (smith_j)',
         'lastname_dot_firstinitial_format' => 'Last Name First Initial (smith.j)',
         'firstnamelastname'     => 'First Name Last Name (janesmith)',
@@ -426,7 +432,7 @@ return [
         'filastname_format'			=> 'Vardo pirmoji raidė, Pavardė (vpavarde@example.com)',
         'lastnamefirstinitial_format' =>  'Pavardė, Vardo pirmoji raidė (pavardev@example.com)',
         'firstname_lastname_underscore_format' => 'Vardas_Pavardė (vardas_pavarde@example.com)',
-        'firstinitial.lastname' => 'Vardo pirmoji raidė.Pavardė (v.pavarde@example.com)',
+        'firstinitial_lastname' => 'Vardo pirmoji raidė.Pavardė (v.pavarde@example.com)',
         'lastname_firstinitial' => 'Pavardė_Vardo pirmoji raidė (pavarde_v@example.com)',
         'lastname_dot_firstinitial_format' => 'Pavardė.Vardo pirmoji raidė (pavarde.v@example.com)',
         'firstnamelastname'     => 'VardasPavardė (vardaspavarde@example.com)',
@@ -484,6 +490,7 @@ return [
         'php_overview'      => 'phpinfo, system, info',
         'purge'             => 'ištrinti visam laikui',
         'security'          => 'slaptažodis, slaptažodžiai, reikalavimai, dviejų veiksnių, dviejų veiksnių, įprasti slaptažodžiai, nuotolinis prisijungimas, atsijungimas, autentifikavimas',
+        'notifications'     => 'alerts, email, notifications, audit, threshold, email alerts, cc',
     ],
 
 ];

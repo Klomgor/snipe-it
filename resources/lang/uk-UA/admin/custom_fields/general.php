@@ -60,5 +60,11 @@ return [
     'display_checkin' => 'Відображати в формах перевірки',
     'display_checkout' => 'Відображати в формах перевірки',
     'display_audit' => 'Відображати в формах перевірки',
-
+    'types' => [
+        'text' => 'Text Box',
+        'listbox' => 'List Box',
+        'textarea' => 'Textarea (multi-line)',
+        'checkbox' => 'Checkbox',
+        'radio' => 'Radio Buttons',
+    ],
 ];

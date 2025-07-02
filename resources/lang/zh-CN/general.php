@@ -8,9 +8,11 @@ return [
     'accessory'				=> '配件',
     'accessory_report'		=> '配件报告',
     'action'                => '操作',
+    'action_date'			=> '操作日期',
     'activity_report'		=> '活动报告',
     'address'				=> '地址',
     'admin'					=> '管理员设置',
+    'admin_user'			=> '管理员用户',
     'admin_tooltip'			=> '此用户拥有管理员权限',
     'superuser'				=> '超级用户',
     'superuser_tooltip'		=> '此用户拥有超级用户权限',
@@ -249,7 +251,7 @@ return [
     'requested'				=> '已申请',
     'requested_date'        => '申领日期',
     'requested_assets'      => '已申领资产',
-    'requested_assets_menu' => '已申领资产',
+    'requested_assets_menu' => '被请求的物品',
     'request_canceled'      => '取消请求',
     'request_item'          => '申领此项',
     'external_link_tooltip' => '外部链接到',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> '状态标签',
     'status'    			=> '状态',
     'accept_eula'           => '接受协议',
+    'eula'                  => 'EULA（最终用户许可协议）',
+    'eula_long'             => '最终用户许可协议',
     'show_or_hide_eulas' => '显示/隐藏 最终用户许可协议EULAs',
     'supplier'              => '供应商',
     'suppliers'  			=> '供应商',
@@ -303,6 +307,7 @@ return [
     'type'  				=> '类型',
     'undeployable'			=> '无法被分配',
     'unknown_admin'			=> '未知管理员',
+    'unknown_user'          => '未知用户',
     'username'              => '用户名',
     'update'                => '更新',
     'updating_item' => '正在更新 :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => '未接受的资产',
     'users'                 => '用户',
     'viewall'				=> '查看全部',
-    'viewassets'  			=> '查看资产分配',
-    'viewassetsfor'         => '查看:name名下资产',
+    'viewassets'  			=> '查看已分配的物品',
+    'viewassetsfor'         => '查看:name名下物品',
+    'view_user_assets'      => '查看分配给用户的物品',
+    'me'                    => '我的',
     'website'               => '站点',
     'welcome'				=> '欢迎您，:name',
     'years'					=> '年',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => '管理者姓',
         'manager_full_name' => '管理者全名',
         'manager_username' => '管理者用户名',
+        'manager_employee_num' => '',
         'checkout_type' => '借出类型',
         'checkout_location' => '借出到位置',
         'image_filename' => '图像文件名',
@@ -534,6 +542,9 @@ return [
     'action_source' => '动作来源',
     'or' => '或',
     'url'                   => 'URL',
+    'phone'                   => '电话',
+    'fax'                   => '传真',
+    'contact'                   => '联系',
     'edit_fieldset' => '编辑字段集字段和选项',
     'permission_denied_superuser_demo' => '权限被拒绝。您不能更新演示上超级管理员的用户信息。',
     'pwd_reset_not_sent' => '用户未激活，可能因为LDAP同步，或没有电子邮件地址',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => '允许用户管理自己的密码',
     'from' => '从',
     'by' => '经由',
+    'version' => '版本',
+    'build' => '版本号',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> 是开源软件，用 <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">爱</span> 由 <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a> 制作。',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => '制造商加载失败，当前系统中已存在一条制造商记录，执行此操作将覆盖现有数据。|制造商加载失败，当前系统中已存在:count条制造商记录，执行此操作将覆盖现有数据。',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

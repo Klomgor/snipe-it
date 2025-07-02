@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'គ្រឿងបន្លាស់',
     'accessory_report'		=> 'របាយការណ៍គ្រឿងបន្លាស់',
     'action'                => 'សកម្មភាព',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'របាយការណ៍សកម្មភាព',
     'address'				=> 'អាស័យដ្ឋាន',
     'admin'					=> 'ការកំណត់អ្នកគ្រប់គ្រង',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'អ្នកប្រើប្រាស់នេះមានសិទ្ធិជាអ្នកគ្រប់គ្រង',
     'superuser'				=> 'អ្នកប្រើជាន់ខ្ពស់',
     'superuser_tooltip'		=> 'អ្នកប្រើប្រាស់នេះមានសិទ្ធិអ្នកប្រើប្រាស់ជាន់ខ្ពស់',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'បានស្នើសុំ',
     'requested_date'        => 'កាលបរិច្ឆេទដែលបានស្នើសុំ',
     'requested_assets'      => 'ទ្រព្យសកម្មដែលបានស្នើសុំ',
-    'requested_assets_menu' => 'ទ្រព្យសកម្មដែលបានស្នើសុំ',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'សំណើត្រូវបានលុបចោល',
     'request_item'          => 'ស្នើសុំធាតុនេះ។',
     'external_link_tooltip' => 'តំណភ្ជាប់ទៅខាងក្រៅ',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'ស្លាកស្ថានភាព',
     'status'    			=> 'ស្ថានភាព',
     'accept_eula'           => 'ទទួលយកកិច្ចព្រមព្រៀង',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'បង្ហាញ/លាក់ EULAs',
     'supplier'              => 'អ្នកផ្គត់ផ្គង់',
     'suppliers'  			=> 'អ្នកផ្គត់ផ្គង់ច្រើន',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'ប្រភេទ',
     'undeployable'			=> 'មិនអាចប្រើប្រាស់បាន',
     'unknown_admin'			=> 'មិនស្គាល់ Admin',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'ឈ្មោះ​អ្នកប្រើប្រាស់',
     'update'                => 'ធ្វើបច្ចុប្បន្នភាព',
     'updating_item' => 'ការធ្វើបច្ចុប្បន្នភាព៖ ធាតុ',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'ទ្រព្យសម្បត្តិដែលមិនទាន់យល់ព្រម។',
     'users'                 => 'អ្នកប្រើប្រាស់ច្រើន',
     'viewall'				=> 'មើលទាំងអស់',
-    'viewassets'  			=> 'មើលទ្រព្យសកម្មដែលបានចាត់តាំង',
-    'viewassetsfor'         => 'មើលទ្រព្យសម្បត្តិសម្រាប់៖ ឈ្មោះ',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'វេបសាយ',
     'welcome'				=> 'សូមស្វាគមន៍៖ ឈ្មោះ',
     'years'					=> 'ឆ្នាំ',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'នាមត្រកូលអ្នកគ្រប់គ្រង',
         'manager_full_name' => 'ឈ្មោះពេញអ្នកគ្រប់គ្រង',
         'manager_username' => 'ឈ្មោះអ្នកប្រើអ្នកគ្រប់គ្រង',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'ប្រភេទ Checkout',
         'checkout_location' => 'Checkout ទៅកាន់ទីតាំង',
         'image_filename' => 'ឈ្មោះឯកសាររូបភាព',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'ប្រភពសកម្មភាព',
     'or' => 'ឬ',
     'url'                   => 'URL',
+    'phone'                   => 'ទូរស័ព្ទ',
+    'fax'                   => 'ទូរសារ',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'កែសម្រួលវាល សំណុំវាល និងជម្រើសច្រើន',
     'permission_denied_superuser_demo' => 'ការអនុញ្ញាតត្រូវបានបដិសេធ។ អ្នកមិនអាចធ្វើបច្ចុប្បន្នភាពព័ត៌មានអ្នកប្រើប្រាស់សម្រាប់អ្នកគ្រប់គ្រងជាន់ខ្ពស់នៅលើការបង្ហាញនោះទេ។',
     'pwd_reset_not_sent' => 'អ្នក​ប្រើ​មិន​ត្រូវ​បាន​ធ្វើ​ឱ្យ​សកម្ម, ត្រូវ​បាន​ធ្វើ​សមកាលកម្ម LDAP, ឬ​មិន​មាន​អាសយដ្ឋាន​អ៊ីមែល',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'អនុញ្ញាតឱ្យអ្នកប្រើប្រាស់គ្រប់គ្រងពាក្យសម្ងាត់ផ្ទាល់ខ្លួនរបស់ពួកគេ។',
     'from' => 'From',
     'by' => 'ដោយ',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

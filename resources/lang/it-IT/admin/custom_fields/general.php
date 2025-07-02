@@ -60,5 +60,11 @@ return [
     'display_checkin' => 'Mostra nei moduli di check-in',
     'display_checkout' => 'Mostra nei moduli di assegnazione',
     'display_audit' => 'Mostra nei moduli di revisione',
-
+    'types' => [
+        'text' => 'Casella di testo',
+        'listbox' => 'Casella elenco',
+        'textarea' => 'Area di testo (multi-riga)',
+        'checkbox' => 'Casella di spunta',
+        'radio' => 'Pulsanti di opzione',
+    ],
 ];

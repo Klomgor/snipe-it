@@ -8,9 +8,11 @@ return [
     'accessory'				=> '付属品',
     'accessory_report'		=> '付属品レポート',
     'action'                => '操作',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> '操作レポート',
     'address'				=> '住所',
     'admin'					=> '管理者設定',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'このユーザーには管理者権限があります',
     'superuser'				=> 'スーパーユーザー',
     'superuser_tooltip'		=> 'このユーザーはスーパーユーザー権限を持っています',
@@ -249,7 +251,7 @@ return [
     'requested'				=> '要求済',
     'requested_date'        => 'リクエスト日',
     'requested_assets'      => '要求された資産',
-    'requested_assets_menu' => '要求された資産',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'リクエストキャンセル',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'ステータスラベル',
     'status'    			=> 'ステータス',
     'accept_eula'           => '受け入れ同意',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'EULAの表示/非表示',
     'supplier'              => '仕入先',
     'suppliers'  			=> '仕入先',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'タイプ',
     'undeployable'			=> '配備不可',
     'unknown_admin'			=> '不明な管理者',
+    'unknown_user'          => '不明なユーザー',
     'username'              => 'ユーザー名',
     'update'                => '更新',
     'updating_item' => ':item を更新中',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => '未許可資産',
     'users'                 => '利用者',
     'viewall'				=> 'すべて表示',
-    'viewassets'  			=> '割当済み資産を表示',
-    'viewassetsfor'         => ':name の資産を表示',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'ウェブサイト',
     'welcome'				=> 'ようこそ、 :name さん',
     'years'					=> '年',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => '管理者の姓',
         'manager_full_name' => 'マネージャーのフルネーム',
         'manager_username' => 'マネージャーのユーザーネーム',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'チェックアウトタイプ',
         'checkout_location' => '場所にチェックアウト',
         'image_filename' => '画像ファイル名',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'アクションソース',
     'or' => 'または',
     'url'                   => 'URL',
+    'phone'                   => '電話番号',
+    'fax'                   => 'Fax',
+    'contact'                   => '連絡先',
     'edit_fieldset' => 'フィールドセットのフィールドとオプションの編集',
     'permission_denied_superuser_demo' => 'アクセスが拒否されました。デモでスーパー管理者のユーザー情報を更新できません。',
     'pwd_reset_not_sent' => 'ユーザーが有効になっていないか、LDAP 同期されているか、メール アドレスがありません。',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => '差出人',
     'by' => '実行者',
+    'version' => 'バージョン',
+    'build' => 'ビルド',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

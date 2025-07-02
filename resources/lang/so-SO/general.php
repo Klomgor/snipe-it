@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Agabka',
     'accessory_report'		=> 'Warbixinta Dheeraadka ah',
     'action'                => 'Ficil',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Warbixinta Dhaqdhaqaaqa',
     'address'				=> 'Cinwaanka',
     'admin'					=> 'Dejinta maamulka',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'This user has admin privileges',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'This user has superuser privileges',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'La codsaday',
     'requested_date'        => 'Taariikhda la codsaday',
     'requested_assets'      => 'Hantida la codsaday',
-    'requested_assets_menu' => 'Hantida la codsaday',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Codsiga waa la joojiyay',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Xaalada',
     'accept_eula'           => 'Heshiiska Ogolaanshaha',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Alaab-qeybiye',
     'suppliers'  			=> 'Alaab-qeybiyeyaal',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Nooca',
     'undeployable'			=> 'Aan la diri karin',
     'unknown_admin'			=> 'Admin aan la garanayn',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Magaca isticmaale',
     'update'                => 'Cusbooneysii',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Hanti Aan La aqbalin',
     'users'                 => 'Isticmaalayaasha',
     'viewall'				=> 'Daawo Dhammaan',
-    'viewassets'  			=> 'Eeg Hantida loo qoondeeyay',
-    'viewassetsfor'         => 'U fiirso hantida :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Mareegta',
     'welcome'				=> 'Soo dhawoow, :name',
     'years'					=> 'sanado',
@@ -506,6 +513,7 @@ return [
         'manager_last_name' => 'Magaca Dambe ee Maareeyaha',
         'manager_full_name' => 'Maareeyaha Magaca oo buuxa',
         'manager_username' => 'Magaca isticmaalaha Maareeyaha',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Nooca hubinta',
         'checkout_location' => 'Hubi goobta',
         'image_filename' => 'Magaca faylka sawirka',
@@ -533,6 +541,9 @@ return [
     'action_source' => 'Action Source',
     'or' => 'or',
     'url'                   => 'URL',
+    'phone'                   => 'Taleefanka',
+    'fax'                   => 'Fakis',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Edit fieldset fields and options',
     'permission_denied_superuser_demo' => 'Permission denied. You cannot update user information for superadmins on the demo.',
     'pwd_reset_not_sent' => 'User is not activated, is LDAP synced, or does not have an email address',
@@ -577,6 +588,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Loo marayo',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -624,5 +638,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

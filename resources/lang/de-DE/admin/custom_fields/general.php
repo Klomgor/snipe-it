@@ -60,5 +60,11 @@ return [
     'display_checkin' => 'In Check-in-Formularen anzeigen',
     'display_checkout' => 'In Check-out-Formularen anzeigen',
     'display_audit' => 'In Audit-Formularen anzeigen',
-
+    'types' => [
+        'text' => 'Textfeld',
+        'listbox' => 'Listenfeld',
+        'textarea' => 'Textbereich (multi-Zeilen)',
+        'checkbox' => 'Auswahlfeld',
+        'radio' => 'Auswahlknöpfe',
+    ],
 ];

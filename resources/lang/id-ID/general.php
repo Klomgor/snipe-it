@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Aksesori',
     'accessory_report'		=> 'Laporan aksesori',
     'action'                => 'Tindakan',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Laporan kegiatan',
     'address'				=> 'Alamat',
     'admin'					=> 'Pengaturan Admin',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Pengguna ini memilik hak admin',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'Pengguna ini memiliki hak superuser',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Diminta',
     'requested_date'        => 'Tanggal Permintaan',
     'requested_assets'      => 'Aset yang Diminta',
-    'requested_assets_menu' => 'Aset yang Diminta',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Permintaan Dibatalkan',
     'request_item'          => 'Perminta barang ini',
     'external_link_tooltip' => 'Tautan eksternal ke',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Label Status',
     'status'    			=> 'Status',
     'accept_eula'           => 'Perjanjian Penerimaan',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Tampilkan/Sembunyikan EULA',
     'supplier'              => 'Pemasok',
     'suppliers'  			=> 'Pemasok',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tipe',
     'undeployable'			=> 'Belum siap digunakan',
     'unknown_admin'			=> 'Admin tidak diketahui',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Nama Pengguna',
     'update'                => 'Memperbarui',
     'updating_item' => 'Memperbarui :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Aset tidak diterima',
     'users'                 => 'Pengguna',
     'viewall'				=> 'Lihat Semua',
-    'viewassets'  			=> 'Tampilkan aset',
-    'viewassetsfor'         => 'Lihat Aset untuk :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Situs Web',
     'welcome'				=> 'Selamat datang, :name',
     'years'					=> 'tahun',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Nama Belakang Manajer',
         'manager_full_name' => 'Nama Lengkap Manajer',
         'manager_username' => 'Nama Pengguna Manajer',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Tipe Keluar',
         'checkout_location' => 'Keluar-kan untuk lokasi di',
         'image_filename' => 'Nama berkas gambar',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Sumber Tindakan',
     'or' => 'atau',
     'url'                   => 'URL',
+    'phone'                   => 'Telepon',
+    'fax'                   => 'Faks',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Edit kolom dan opsi kelompok kolom',
     'permission_denied_superuser_demo' => 'Akses ditolak. Anda tidak dapat memperbarui informasi pengguna untuk superadmin pada demo ini.',
     'pwd_reset_not_sent' => 'Pengguna belum diaktifkan, disinkronkan dengan LDAP, atau tidak memiliki alamat email',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Izinkan pengguna mengelola kata sandi mereka sendiri',
     'from' => 'From',
     'by' => 'Oleh',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

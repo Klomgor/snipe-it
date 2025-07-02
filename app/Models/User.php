@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Http\Traits\UniqueUndeletedTrait;
 use App\Models\Traits\Searchable;
+use App\Models\Traits\HasUploads;
 use App\Presenters\Presentable;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -18,6 +19,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Str;
 use Laravel\Passport\HasApiTokens;
 use Watson\Validating\ValidatingTrait;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -26,9 +28,10 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
 {
     use HasFactory;
     use CompanyableTrait;
+    use HasUploads;
 
     protected $presenter = \App\Presenters\UserPresenter::class;
-    use SoftDeletes, ValidatingTrait;
+    use SoftDeletes, ValidatingTrait, Loggable;
     use Authenticatable, Authorizable, CanResetPassword, HasApiTokens;
     use UniqueUndeletedTrait;
     use Notifiable;
@@ -167,6 +170,15 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
         });
     }
 
+
+    public function isAvatarExternal() {
+        // Check if it's a google avatar or some external avatar
+        if (Str::startsWith($this->avatar, ['http://', 'https://'])) {
+            return true;
+        }
+
+        return false;
+    }
 
     /**
      * Internally check the user permission for the given section
@@ -520,21 +532,7 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
         return $this->hasMany(\App\Models\Asset::class, 'id')->withTrashed();
     }
 
-    /**
-     * Establishes the user -> uploads relationship
-     *
-     * @author A. Gianotto <snipe@snipe.net>
-     * @since [v3.0]
-     * @return \Illuminate\Database\Eloquent\Relations\Relation
-     */
-    public function uploads()
-    {
-        return $this->hasMany(\App\Models\Actionlog::class, 'item_id')
-            ->where('item_type', self::class)
-            ->where('action_type', '=', 'uploaded')
-            ->whereNotNull('filename')
-            ->orderBy('created_at', 'desc');
-    }
+
 
     /**
      * Establishes the user -> acceptances relationship
@@ -548,6 +546,25 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
         return $this->hasMany(\App\Models\Actionlog::class, 'target_id')
             ->where('target_type', self::class)
             ->where('action_type', '=', 'accepted')
+            ->orderBy('created_at', 'desc');
+    }
+
+    /**
+     * Establishes the user -> eula relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\Relation
+     * @since [v8.1.16]
+     * @author [Godfrey Martinez] [<gmartinez@grokability.com>]
+ */
+    public function eulas()
+    {
+        return $this->hasMany(Actionlog::class, 'target_id')
+            ->with('item')
+            ->select(['id', 'target_id', 'target_type', 'action_type', 'filename', 'accept_signature', 'created_at', 'note', 'item_id', 'item_type'])
+            ->where('target_type', self::class)
+            ->where('action_type', 'accepted')
+            ->whereNotNull('filename')
+            ->whereNotNull('accept_signature')
             ->orderBy('created_at', 'desc');
     }
 
@@ -956,5 +973,75 @@ class User extends SnipeModel implements AuthenticatableContract, AuthorizableCo
 
 
 
+    }
+
+    /**
+     * Get all direct and indirect subordinates for this user.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function getAllSubordinates()
+    {
+        $subordinates = collect();
+        $this->fetchSubordinatesRecursive($this, $subordinates);
+        return $subordinates->unique('id');
+    }
+
+    /**
+     * Get all direct and indirect subordinates for this user, including self.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public function getAllSubordinatesIncludingSelf()
+    {
+        $subordinates = collect([$this]);
+        $this->fetchSubordinatesRecursive($this, $subordinates);
+        return $subordinates->unique('id');
+    }
+
+    /**
+     * Recursive helper function to fetch subordinates.
+     *
+     * @param User $manager
+     * @param \Illuminate\Support\Collection $subs
+     */
+    protected function fetchSubordinatesRecursive(User $manager, \Illuminate\Support\Collection &$subs)
+    {
+        // Eager load 'managesUsers' to prevent N+1 queries in recursion
+        $directSubordinates = $manager->managesUsers()->with('managesUsers')->get();
+
+        foreach ($directSubordinates as $directSubordinate) {
+            // Add subordinate if not already in the collection
+            if (!$subs->contains('id', $directSubordinate->id)) {
+                 $subs->push($directSubordinate);
+                 // Recursive call for this subordinate's subordinates
+                 $this->fetchSubordinatesRecursive($directSubordinate, $subs);
+            }
+        }
+    }
+
+    /**
+     * Check if the current user is a direct or indirect manager of the given user.
+     *
+     * @param User $userToCheck
+     * @return bool
+     */
+    public function isManagerOf(User $userToCheck): bool
+    {
+        // Optimization: If it's the same user, they are not their own manager
+        if ($this->id === $userToCheck->id) {
+            return false;
+        }
+
+        // Eager load manager relationship to potentially reduce queries in the loop
+        $manager = $userToCheck->load('manager')->manager;
+        while ($manager) {
+            if ($manager->id === $this->id) {
+                return true;
+            }
+            // Move up the hierarchy (load relationship if not already loaded)
+            $manager = $manager->load('manager')->manager;
+        }
+        return false;
     }
 }

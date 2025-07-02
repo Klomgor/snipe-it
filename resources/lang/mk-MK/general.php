@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Додаток',
     'accessory_report'		=> 'Извештај за додаток',
     'action'                => 'Акција',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Извештај за активност',
     'address'				=> 'Адреса',
     'admin'					=> 'Административни подесувања',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Корисникот има администраторски привилегии',
     'superuser'				=> 'Суперкорисник',
     'superuser_tooltip'		=> 'Корисникот има привилегии на суперкорисник',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Побарано',
     'requested_date'        => 'Побаран датум',
     'requested_assets'      => 'Побарани средства',
-    'requested_assets_menu' => 'Побарани средства',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Барањето е откажано',
     'request_item'          => 'Побарајте оваа ставка',
     'external_link_tooltip' => 'Надворешна врска до',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Статус',
     'accept_eula'           => 'Договор за прифаќање',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Прикажи/Скријај EULA',
     'supplier'              => 'Добавувач',
     'suppliers'  			=> 'Добавувачи',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Тип',
     'undeployable'			=> 'Не може да се распореди',
     'unknown_admin'			=> 'Непознат Администратор',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Корисничко име',
     'update'                => 'Ажурирање',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Неприфатени средства',
     'users'                 => 'Корисници',
     'viewall'				=> 'Прикажи се',
-    'viewassets'  			=> 'Прикажете ги доделените основни средства',
-    'viewassetsfor'         => 'Прикажи имот од корисникот :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Веб страна',
     'welcome'				=> 'Добредојдовте :name',
     'years'					=> 'години',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Менаџер Презиме',
         'manager_full_name' => 'Менаџер Целосно име',
         'manager_username' => 'Менаџер Корисничко име',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Тип на задолжување',
         'checkout_location' => 'Локација на задолжување',
         'image_filename' => 'Име на датотеката за слика',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Action Source',
     'or' => 'or',
     'url'                   => 'URL',
+    'phone'                   => 'Телефон',
+    'fax'                   => 'Факс',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Измени полиња на групата и опции',
     'permission_denied_superuser_demo' => 'Овластувањето е одбиено. Неможете да измените податоци за Суперадмин во оваа демонстрација.',
     'pwd_reset_not_sent' => 'Корисникот не е активиран, дали LDAP е синхронизиран, или нема неведено адреса на Е-пошта',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Од',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

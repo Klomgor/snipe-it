@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Acessório',
     'accessory_report'		=> 'Relatório de Acessório',
     'action'                => 'Ação',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Relatório de atividades',
     'address'				=> 'Morada',
     'admin'					=> 'Configurações de administrador',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Este usuário tem privilégios de administrador',
     'superuser'				=> 'Superusuário',
     'superuser_tooltip'		=> 'Este usuário tem privilégios de superusuário',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Solicitado',
     'requested_date'        => 'Data de solicitação',
     'requested_assets'      => 'Artigos solicitados',
-    'requested_assets_menu' => 'Artigos solicitados',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Pedido cancelado',
     'request_item'          => 'Solicitar esse item',
     'external_link_tooltip' => 'Link externo para',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Estado',
     'accept_eula'           => 'Contrato de licença',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Fornecedor',
     'suppliers'  			=> 'Fornecedores',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tipo',
     'undeployable'			=> 'Não implementável',
     'unknown_admin'			=> 'Administrador desconhecido',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Nome de utilizador',
     'update'                => 'Atualizar',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Artigos recusados',
     'users'                 => 'Utilizadores',
     'viewall'				=> 'Ver todos',
-    'viewassets'  			=> 'Ver Artigos Alocados',
-    'viewassetsfor'         => 'Ver Ativos para :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Website',
     'welcome'				=> 'Bem vindo, :name',
     'years'					=> 'anos',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Último Nome do Gerente',
         'manager_full_name' => 'Nome Completo do Gerente',
         'manager_username' => 'Nome de Utilizador do Gerente',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Tipo de Entrega',
         'checkout_location' => 'Entregue à Localização',
         'image_filename' => 'Ficheiro de Imagem',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Fonte da Ação',
     'or' => 'ou',
     'url'                   => 'URL',
+    'phone'                   => 'Telefone',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Editar campos e opções',
     'permission_denied_superuser_demo' => 'Permissão negada. Você não pode atualizar informações de usuário para superadministradores na demonstração.',
     'pwd_reset_not_sent' => 'Usuário não está ativado, está sincronizado com o LDAP ou não tem um endereço de e-mail',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Por',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

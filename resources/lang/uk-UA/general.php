@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Аксесуари',
     'accessory_report'		=> 'Звіт про аксесуари',
     'action'                => 'Дія',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Звіт про діяльність',
     'address'				=> 'Адреса',
     'admin'					=> 'Адміністративні налаштування',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Цей користувач має права адміністратора',
     'superuser'				=> 'Суперкористувач',
     'superuser_tooltip'		=> 'Цей користувач має права суперкористувача',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Запрошено користувачем',
     'requested_date'        => 'Дата запиту',
     'requested_assets'      => 'Запитані активи',
-    'requested_assets_menu' => 'Запитані активи',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Запит скасовано',
     'request_item'          => 'Запросити цю річ',
     'external_link_tooltip' => 'Зовнішнє посилання на',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Позначка статусу',
     'status'    			=> 'Статус',
     'accept_eula'           => 'Угода про погодження',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Показати/приховати EULA',
     'supplier'              => 'Постачальник',
     'suppliers'  			=> 'Постачальники',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Тип',
     'undeployable'			=> 'Не доступний для встановлення',
     'unknown_admin'			=> 'Невідомий адміністратор',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Ім\'я кристувача',
     'update'                => 'Оновлення',
     'updating_item' => 'Оновлення :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Неприйняті активи',
     'users'                 => 'Користувачі',
     'viewall'				=> 'Переглянути все',
-    'viewassets'  			=> 'Показаті прив\'язані активи',
-    'viewassetsfor'         => 'Переглянути активи для :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Веб-сайт',
     'welcome'				=> 'Ласкаво просимо, :name',
     'years'					=> 'років',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Прізвище менеджера',
         'manager_full_name' => 'Ім\'я менеджера',
         'manager_username' => 'Ім\'я користувача менеджера',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Тип процесу оформлення замовлення',
         'checkout_location' => 'Видати за розташуванням',
         'image_filename' => 'Назва файлу зображення',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Джерело дії',
     'or' => 'або',
     'url'                   => 'URL',
+    'phone'                   => 'Номер телефону',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Редагування полів і параметрів польових налаштувань',
     'permission_denied_superuser_demo' => 'У доступі відмовлено. Ви не можете оновити інформацію про користувача для суперадміністраторів на демо.',
     'pwd_reset_not_sent' => 'Користувач не активований, він синхронізується або не має електронної адреси',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Дозволити користувачам керувати своїми паролями',
     'from' => 'From',
     'by' => 'Ким',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

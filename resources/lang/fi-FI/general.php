@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Oheistarvike',
     'accessory_report'		=> 'Oheistarvikeraportti',
     'action'                => 'Toiminto',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Toimintaraportti',
     'address'				=> 'Osoite',
     'admin'					=> 'Ylläpitäjän Asetukset',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'This user has admin privileges',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'This user has superuser privileges',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Pyydetty',
     'requested_date'        => 'Pyynnön päivämäärä',
     'requested_assets'      => 'Pyydetyt laitteet',
-    'requested_assets_menu' => 'Pyydetyt laitteet',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Pyyntö peruutettu',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Tila',
     'accept_eula'           => 'Käyttöoikeussopimus',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Toimittaja',
     'suppliers'  			=> 'Toimittajat',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tyyppi',
     'undeployable'			=> 'Ei käyttöönotettavissa',
     'unknown_admin'			=> 'Tuntematon ylläpitäjä',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Käyttäjätunnus',
     'update'                => 'Päivitä',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Hyväksymättömät laitteet',
     'users'                 => 'Käyttäjät',
     'viewall'				=> 'Näytä kaikki',
-    'viewassets'  			=> 'Näytä luovutetut laitteet',
-    'viewassetsfor'         => 'Näytä laitteet nimelle :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Verkkosivu',
     'welcome'				=> 'Tervetuloa, :name',
     'years'					=> 'vuotta',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Esihenkilön sukunimi',
         'manager_full_name' => 'Esihenkilön koko nimi',
         'manager_username' => 'Esihenkilön käyttäjänimi',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Lainaustyyppi',
         'checkout_location' => 'Lainaa kohteeseen',
         'image_filename' => 'Kuvan tiedostonimi',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Toiminnan Lähde',
     'or' => 'tai',
     'url'                   => 'URL',
+    'phone'                   => 'Puhelin',
+    'fax'                   => 'Faksi',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Muokkaa kentän kenttiä ja asetuksia',
     'permission_denied_superuser_demo' => 'Lupa evätty. Et voi päivittää supervalvojien käyttäjätietoja demoissa.',
     'pwd_reset_not_sent' => 'Käyttäjä ei ole aktivoitu, LDAP on synkronoitu tai hänellä ei ole sähköpostiosoitetta',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Suorittaja',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

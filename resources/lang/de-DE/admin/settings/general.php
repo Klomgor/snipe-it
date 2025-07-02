@@ -9,6 +9,8 @@ return [
     'ad_append_domain_help'     => 'Der Benutzer muss nicht "username@domain.local" eingeben, "username" ist ausreichend.',
     'admin_cc_email'            => 'CC Email',
     'admin_cc_email_help'       => 'Senden Sie eine Kopie der Checkin/Checkout-E-Mails an diese Adresse.',
+    'admin_cc_always' => 'Bei Check-in/Check-out immer eine Kopie senden',
+    'admin_cc_when_acceptance_required' => 'Eine Kopie nur beim Check-out senden, wenn eine Zustimmung erforderlich ist',
     'admin_settings'            => 'Admin-Einstellungen',
     'is_ad'				        => 'Dies ist ein Active Directory Server',
     'alerts'                	=> 'Alarme',
@@ -155,6 +157,7 @@ return [
     'scope_locations_fmcs_support_text'  => 'Bereicherte Standorte mit vollständiger Unterstützung für mehrere Unternehmen',
     'scope_locations_fmcs_support_help_text'  => 'Standorte auf das ausgewählte Unternehmen beschränken.',
     'scope_locations_fmcs_check_button' => 'Kompatibilität prüfen',
+    'scope_locations_fmcs_test_needed' => 'Please Check Compatibility to enable this',
     'scope_locations_fmcs_support_disabled_text'  => 'Diese Option ist deaktiviert, da für :count oder mehr Elemente widersprüchliche Standorte gesetzt sind.',
     'show_in_model_list'   => 'In Modell-Dropdown-Liste anzeigen',
     'optional'					=> 'optional',
@@ -401,6 +404,9 @@ return [
     'due_checkin_days_help' => 'Wie viele Tage vor dem voraussichtlichen Check-in eines Vermögenswerts soll dieser auf der Seite „Zur Eincheckzeit fällig“ aufgeführt werden?',
     'no_groups' => 'Es wurden noch keine Gruppen erstellt. Navigieren Sie zu <code>Admin-Einstellungen > Berechtigungsgruppen</code>, um eine hinzuzufügen.',
     'text' => 'Text',
+    'manager_view' => 'Manager View',
+    'manager_view_enabled_text' => 'Enable Manager View',
+    'manager_view_enabled_help' => 'Allow managers to view assigned items to their direct and indirect reports in their account view.',
 
     'username_formats' => [
         'username_format'		=> 'Format der Benutzernamen',
@@ -410,7 +416,7 @@ return [
         'filastname_format'			=> 'Initial des Vornamen & Nachname (emustermann)',
         'lastnamefirstinitial_format' =>  'Nachname Initial des Vornamens (mustermanne)',
         'firstname_lastname_underscore_format' => 'Vorname Nachname (erika_mustermann)',
-        'firstinitial.lastname' => 'Initial des Vornamen & Nachname (e.mustermann)',
+        'firstinitial_lastname' => 'Initial des Vornamen & Nachname (e.mustermann)',
         'lastname_firstinitial' => 'Nachname Initial des Vornamens (mustermann_e)',
         'lastname_dot_firstinitial_format' => 'Nachname & Initial des Vornamens (mustermann.e)',
         'firstnamelastname'     => 'Vorname Nachname (erikamustermann)',
@@ -426,7 +432,7 @@ return [
         'filastname_format'			=> 'Initial des Vornamen & Nachname (emustermann@example.com)',
         'lastnamefirstinitial_format' =>  'Nachname & Initiale des Vornamens (mustere@example.com)',
         'firstname_lastname_underscore_format' => 'Vorname_Nachname (erika_mustermann@example.com)',
-        'firstinitial.lastname' => 'Initiale des Vornamen.Nachname (e.mustermann@example.com)',
+        'firstinitial_lastname' => 'Initiale des Vornamen.Nachname (e.mustermann@example.com)',
         'lastname_firstinitial' => 'Nachname_Initiale des Vornamens (mustermann_e@example.com)',
         'lastname_dot_firstinitial_format' => 'Nachname & Initiale des Vornamens (mustermann.e@example.com)',
         'firstnamelastname'     => 'Vorname & Nachname (erikamustermann@example.com)',
@@ -484,6 +490,7 @@ return [
         'php_overview'      => 'PHP-Info, System, Info',
         'purge'             => 'endgültig löschen',
         'security'          => 'Passwort, Passwörter, Anforderungen, Zwei-Faktor, Zwei-Faktor, übliche Passwörter, Remote-Login, Logout, Authentifizierung',
+        'notifications'     => 'Warnungen, E-Mail, Benachrichtigungen, Inventarisierung, Schwellenwert, E-Mail-Warnungen, CC',
     ],
 
 ];

@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Accessory',
     'accessory_report'		=> 'Accessory Report',
     'action'                => 'Action',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Activity Report',
     'address'				=> 'Address',
     'admin'					=> 'Admin Settings',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'This user has admin privileges',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'This user has superuser privileges',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Requested',
     'requested_date'        => 'Requested Date',
     'requested_assets'      => 'Requested Assets',
-    'requested_assets_menu' => 'Requested Assets',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Request Canceled',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Status',
     'accept_eula'           => 'Acceptance Agreement',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Supplier',
     'suppliers'  			=> 'Suppliers',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Type',
     'undeployable'			=> 'Un-deployable',
     'unknown_admin'			=> 'Unknown Admin',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Username',
     'update'                => 'යාවත්කාල',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Unaccepted Assets',
     'users'                 => 'Users',
     'viewall'				=> 'View All',
-    'viewassets'  			=> 'View Assigned Assets',
-    'viewassetsfor'         => 'View Assets for :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Website',
     'welcome'				=> 'Welcome, :name',
     'years'					=> 'years',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Manager Last Name',
         'manager_full_name' => 'Manager Full Name',
         'manager_username' => 'Manager Username',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Checkout Type',
         'checkout_location' => 'Checkout to Location',
         'image_filename' => 'Image Filename',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Action Source',
     'or' => 'or',
     'url'                   => 'URL',
+    'phone'                   => 'Phone',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Edit fieldset fields and options',
     'permission_denied_superuser_demo' => 'Permission denied. You cannot update user information for superadmins on the demo.',
     'pwd_reset_not_sent' => 'User is not activated, is LDAP synced, or does not have an email address',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'By',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

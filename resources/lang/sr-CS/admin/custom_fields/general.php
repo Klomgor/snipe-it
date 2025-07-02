@@ -60,5 +60,11 @@ return [
     'display_checkin' => 'Prikaži u formularima razduživanja',
     'display_checkout' => 'Prikaži u formularima zaduživanja',
     'display_audit' => 'Prikaži u formularu revizije',
-
+    'types' => [
+        'text' => 'Tekstualno polje',
+        'listbox' => 'Polje spiska',
+        'textarea' => 'Tekstualna oblast (više redova)',
+        'checkbox' => 'Polje za potvrdu',
+        'radio' => 'Dugmići izbora',
+    ],
 ];

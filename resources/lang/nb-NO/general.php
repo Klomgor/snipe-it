@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Tilbehør',
     'accessory_report'		=> 'Rapport over tilbehør',
     'action'                => 'Handlinger',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Aktivitetsrapport',
     'address'				=> 'Adresse',
     'admin'					=> 'Admin innstillinger',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'This user has admin privileges',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'This user has superuser privileges',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Forespurt',
     'requested_date'        => 'Forespurt dato',
     'requested_assets'      => 'Forespurte eiendeler',
-    'requested_assets_menu' => 'Forespurte eiendeler',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Forespørsel avbrutt',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Status',
     'accept_eula'           => 'Akseptavtale',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Leverandør',
     'suppliers'  			=> 'Leverandører',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Type',
     'undeployable'			=> 'Ikke utleverbar',
     'unknown_admin'			=> 'Ukjent admin',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Brukernavn',
     'update'                => 'Oppdater',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Ikke aksepterte eiendeler',
     'users'                 => 'Brukere',
     'viewall'				=> 'Vis alle',
-    'viewassets'  			=> 'Vis tildelte eiendeler',
-    'viewassetsfor'         => 'Vis eiendelene til :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Nettsted',
     'welcome'				=> 'Velkommen, :name',
     'years'					=> 'år',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Leders etternavn',
         'manager_full_name' => 'Leders fulle navn',
         'manager_username' => 'Leders brukernavn',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Utsjekk type',
         'checkout_location' => 'Sjekket ut til lokasjon',
         'image_filename' => 'Filnavn bilde',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Kilde for handling',
     'or' => 'eller',
     'url'                   => 'URL',
+    'phone'                   => 'Telefon',
+    'fax'                   => 'Faks',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Redigere feltene og opsjonene',
     'permission_denied_superuser_demo' => 'Tillatelse nektet. Du kan ikke oppdatere brukerinformasjon for superadmins på demo.',
     'pwd_reset_not_sent' => 'Brukeren er ikke aktivert, er LDAP synkronisert eller har ikke en e-postadresse',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Av',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

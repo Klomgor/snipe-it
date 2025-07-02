@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Piederums',
     'accessory_report'		=> 'Piederumu pārskats',
     'action'                => 'Darbība',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Darbības pārskats',
     'address'				=> 'Adrese',
     'admin'					=> 'Admin Settings',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Šim lietotājam ir administratora tiesības',
     'superuser'				=> 'Galvenais lietotājs',
     'superuser_tooltip'		=> 'Šim lietotājam ir glavenā lietotāja tiesības',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Pieprasīts',
     'requested_date'        => 'Pieprasīšanas datums',
     'requested_assets'      => 'Pieprasītais inventārs',
-    'requested_assets_menu' => 'Pieprasītais inventārs',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Pieprasījums atcelts',
     'request_item'          => 'Pieprasīt šo lietu',
     'external_link_tooltip' => 'Ārējā saite',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Statuss',
     'accept_eula'           => 'Pieņemšanas Līgums',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Piegādātājs',
     'suppliers'  			=> 'Piegādātāji',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tips',
     'undeployable'			=> 'Un-deployable',
     'unknown_admin'			=> 'Nezināms administrators',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Lietotājvārds',
     'update'                => 'Atjaunināt',
     'updating_item' => 'Updating :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Nepieņemtie aktīvi',
     'users'                 => 'Lietotāji',
     'viewall'				=> 'Skatīt visus',
-    'viewassets'  			=> 'Apskatīt piešķirtos aktīvus',
-    'viewassetsfor'         => 'Skatīt :name inventāru',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Tīmekļa vietne',
     'welcome'				=> 'Laipni lūdzam: vārds',
     'years'					=> 'gadiem',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Vadītāja Uzvārds',
         'manager_full_name' => 'Vadītāja Vārds Uzvārds',
         'manager_username' => 'Vadītāja Lietotājs',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Izsniegšanas veids',
         'checkout_location' => 'Checkout to Location',
         'image_filename' => 'Image Filename',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Action Source',
     'or' => 'or',
     'url'                   => 'URL',
+    'phone'                   => 'Tālrunis',
+    'fax'                   => 'Fakss',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Edit fieldset fields and options',
     'permission_denied_superuser_demo' => 'Permission denied. You cannot update user information for superadmins on the demo.',
     'pwd_reset_not_sent' => 'User is not activated, is LDAP synced, or does not have an email address',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Līdz',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

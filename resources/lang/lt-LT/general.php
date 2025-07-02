@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Priedas',
     'accessory_report'		=> 'Priedų ataskaita',
     'action'                => 'Veiksmas',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Veiklos ataskaita',
     'address'				=> 'Adresas',
     'admin'					=> 'Administratoriaus nustatymai',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Šis naudotojas turi administratoriaus teises',
     'superuser'				=> 'Supernaudotojas',
     'superuser_tooltip'		=> 'Šis naudotojas turi supernaudotojo teises',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Užsakytas',
     'requested_date'        => 'Prašymo data',
     'requested_assets'      => 'Prašomas turtas',
-    'requested_assets_menu' => 'Prašomas turtas',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Prašymas atšauktas',
     'request_item'          => 'Užsakyti šį daiktą',
     'external_link_tooltip' => 'Išorinė nuoroda',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Būsenos žyma',
     'status'    			=> 'Būsena',
     'accept_eula'           => 'Licencinis sutikimas',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Rodyti/slėpti licencinius sutikimus',
     'supplier'              => 'Tiekėjas',
     'suppliers'  			=> 'Tiekėjai',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tipas',
     'undeployable'			=> 'Neišduotinas',
     'unknown_admin'			=> 'Nežinomas administratorius',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Naudotojo vardas',
     'update'                => 'Atnaujinti',
     'updating_item' => 'Atnaujinamas :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Nepriimtas turtas',
     'users'                 => 'Naudotojai',
     'viewall'				=> 'Rodyti viską',
-    'viewassets'  			=> 'Peržiūrėti priskirtą turtą',
-    'viewassetsfor'         => 'Peržiūrėti :name turtą',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Internetinis puslapis',
     'welcome'				=> 'Sveiki, :name',
     'years'					=> 'metai',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Vadovo pavardė',
         'manager_full_name' => 'Vadovo vardas ir pavardė',
         'manager_username' => 'Vadovo prisijungimo vardas',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Išdavimo tipas',
         'checkout_location' => 'Priskirti vietai',
         'image_filename' => 'Atvaizdo failo pavadinimas',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Veiksmo šaltinis',
     'or' => 'arba',
     'url'                   => 'URL',
+    'phone'                   => 'Telefono Nr.',
+    'fax'                   => 'Faksas',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Redaguoti laukų rinkinio laukus ir parinktis',
     'permission_denied_superuser_demo' => 'Leidimas nesuteiktas. Demonstraciniame režime negalite keisti superadministratoriaus naudotojo informacijos.',
     'pwd_reset_not_sent' => 'Naudotojas nesuaktyvintas, yra sinchronizuotas LDAP arba neturi el. pašto adreso',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Leisti naudotojams tvarkyti savo slaptažodžius',
     'from' => 'From',
     'by' => 'Atlikti',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
 
 ];

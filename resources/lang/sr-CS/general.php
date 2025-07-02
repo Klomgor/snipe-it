@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Accessory',
     'accessory_report'		=> 'Accessory Report',
     'action'                => 'Akcija',
+    'action_date'			=> 'Datum radnje',
     'activity_report'		=> 'Izveštaj o aktivnostima',
     'address'				=> 'Adresa',
     'admin'					=> 'Administratorska podešavanja',
+    'admin_user'			=> 'Admin korisnik',
     'admin_tooltip'			=> 'Ovaj korisnik ima admin privilegije',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'Ovaj korisnik ima superuser privilegije',
@@ -249,7 +251,7 @@ return [
     'requested'				=> 'Tražena',
     'requested_date'        => 'Datum zatraživanja',
     'requested_assets'      => 'Zatražena imovina',
-    'requested_assets_menu' => 'Zatražena imovina',
+    'requested_assets_menu' => 'Zatražene stavke',
     'request_canceled'      => 'Zahtev je otkazan',
     'request_item'          => 'Zatraži ovu stavku',
     'external_link_tooltip' => 'Eksterna veza do',
@@ -287,6 +289,8 @@ return [
     'status_label'			=> 'Oznaka statusa',
     'status'    			=> 'Status',
     'accept_eula'           => 'Ugovor o prihvatanju',
+    'eula'                  => 'EULA-e',
+    'eula_long'             => 'Ugovor o licenciranju sa krajnjim korisnikom',
     'show_or_hide_eulas' => 'Prikaži/Sakrij EULA',
     'supplier'              => 'Dobavljač',
     'suppliers'  			=> 'Dobavljači',
@@ -303,6 +307,7 @@ return [
     'type'  				=> 'Tip',
     'undeployable'			=> 'Un-deployable',
     'unknown_admin'			=> 'Nepoznati administrator',
+    'unknown_user'          => 'Nepoznati korisnik',
     'username'              => 'Korisničko ime',
     'update'                => 'Ažuriraj',
     'updating_item' => 'Izmena :item',
@@ -316,8 +321,10 @@ return [
     'unaccepted_asset_report' => 'Neprihvaćene imovine',
     'users'                 => 'Korisnici',
     'viewall'				=> 'Prikaži svе',
-    'viewassets'  			=> 'Prikaz dodijeljene imovine',
-    'viewassetsfor'         => 'Prikaži imovinu korisnika :name',
+    'viewassets'  			=> 'Prikaži dodeljene stavke',
+    'viewassetsfor'         => 'Prikaži stavke od :name',
+    'view_user_assets'      => 'Prikaži stavke dodeljene korisniku',
+    'me'                    => 'Ja',
     'website'               => 'Website',
     'welcome'				=> 'Dobrodošli, :name',
     'years'					=> 'godine',
@@ -507,6 +514,7 @@ return [
         'manager_last_name' => 'Menadzer: Prezime',
         'manager_full_name' => 'Menadzer: Puno Ime',
         'manager_username' => 'Menadzer: Korisnicko ime',
+        'manager_employee_num' => 'Broj radnika rukovodioca',
         'checkout_type' => 'Tip Naplate',
         'checkout_location' => 'Zaduži lokaciju',
         'image_filename' => 'Ime datoteke slike',
@@ -534,6 +542,9 @@ return [
     'action_source' => 'Izvor aktivnosti',
     'or' => 'ili',
     'url'                   => 'URL adresa',
+    'phone'                   => 'Telefon',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Kontakt',
     'edit_fieldset' => 'Izmeni polja i opcije grupe polja',
     'permission_denied_superuser_demo' => 'Ovlašćenje je odbijeno. Ne možete da izmenite podatke o superadmin korisniku u ovoj demostraciji.',
     'pwd_reset_not_sent' => 'Korisnik nije aktiviran, nije sinhronizovan sa LDAP-om, ili nema navedenu adresu e-pošte',
@@ -578,6 +589,9 @@ return [
     'user_managed_passwords_allow' => 'Omogući korisnicima da upravljaju svojim lozinkama',
     'from' => 'Od',
     'by' => 'By',
+    'version' => 'Verzija',
+    'build' => 'izdanje',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> je softver otvorenog koda, napravljen sa <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">ljubavlju</span> od strane <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +639,25 @@ return [
             'error' => 'Nije bilo moguće dodati proizvođače. Proizvođač već postoji i ovo bi ga prepisalo.|Nije bilo moguće dodati proizvođače. :count proizvođača već postoji i ovo bi ih prepisalo.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'Datoteka je uspešno postavljena |:count datoteka je uspešno postavljeno',
+            'error' => 'Nije uspelo postavljanje datoteke |Nije uspelo postavljanje :count datoteka',
+        ],
+
+        'delete' => [
+            'success' => 'Datoteka je uspešno obrisana |:count datoteka je uspešno obrisano',
+            'error' => 'Nije uspelo brisanje datoteke |Nije uspelo brisanje :count datoteka',
+        ],
+
+        'file_not_found' => 'Izabrana datoteka nije pronađena na serveru',
+        'invalid_id' => 'ID datoteke nije ispravan',
+        'invalid_object' => 'ID objekta nije ispravan',
+        'nofiles' => 'Nisu izabrane datoteke za postavljanje',
+        'confirm_delete' => 'Da li zaista želite da obrišete ovu datoteku?',
+    ],
+
 
 ];
