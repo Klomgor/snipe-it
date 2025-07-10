@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Аксесоар',
     'accessory_report'		=> 'Справка за аксесоарите',
     'action'                => 'Действие',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Справка за дейностите',
     'address'				=> 'Aдрес',
     'admin'					=> 'Админ настройки',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'Този потребител има администраторски привилегии',
     'superuser'				=> 'Супер потребител',
     'superuser_tooltip'		=> 'Този потребител има привилегии на супер потребител',
@@ -223,11 +225,13 @@ return [
     'order_number'          => 'Номер на поръчка',
     'only_deleted'          => 'Само изтрити активи',
     'page_menu'				=> 'Показване на _MENU_ записа',
+    'page_error'            => 'Could not determine previous page. Redirected to homepage.',
     'pagination_info'		=> 'Показване на _START_ до _END_ от _TOTAL_ елемента',
     'pending'				=> 'Изчакване',
     'people'				=> 'Потребители',
     'per_page'				=> 'Резултати на страница',
     'previous'				=> 'Предишен',
+    'previous_page'			=> 'Previous Page',
     'processing'			=> 'Обработка',
     'profile'				=> 'Вашият профил',
     'purchase_cost'                              => 'Цена на закупуване',
@@ -249,7 +253,7 @@ return [
     'requested'				=> 'Изискан',
     'requested_date'        => 'Дата на заявката',
     'requested_assets'      => 'Изискуеми активи',
-    'requested_assets_menu' => 'Изискуеми активи',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Заявка отменена',
     'request_item'          => 'Поискайте този артикул',
     'external_link_tooltip' => 'Външна връзка към',
@@ -287,6 +291,8 @@ return [
     'status_label'			=> 'Статус етикет',
     'status'    			=> 'Статус',
     'accept_eula'           => 'Споразумение за приемане',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Покажи/Скрий EULAs',
     'supplier'              => 'Доставчик',
     'suppliers'  			=> 'Доставчици',
@@ -303,10 +309,11 @@ return [
     'type'  				=> 'Тип',
     'undeployable'			=> 'Не може да бъде предоставян',
     'unknown_admin'			=> 'Непознат администратор',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Потребител',
     'update'                => 'Обновяване',
     'updating_item' => 'Обновяване :item',
-    'upload_filetypes_help'      => 'Позволените файлови разширения са png, gif, jpg, jpeg, doc, docx, pdf, xls, xlsx, txt, lic, xml, zip, rtf и rar. Максималният размер на файла е :size.',
+    'upload_filetypes_help' => 'Allowed filetypes are: :allowed_filetypes. Max upload size allowed is :size.',
     'uploaded'              => 'Качен',
     'user'					=> 'Потребител',
     'accepted'			    => 'приет',
@@ -316,8 +323,10 @@ return [
     'unaccepted_asset_report' => 'Неприети активи',
     'users'                 => 'Потребители',
     'viewall'				=> 'Виж всички',
-    'viewassets'  			=> 'Преглед на изписаните активи',
-    'viewassetsfor'         => 'Преглед на активите на :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Страница',
     'welcome'				=> 'Добре дошли, :name',
     'years'					=> 'години',
@@ -507,6 +516,7 @@ return [
         'manager_last_name' => 'Ръководител Фамилия',
         'manager_full_name' => 'Ръководител Име Фамилия',
         'manager_username' => 'Ръководител потребителско име',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Изписан тип',
         'checkout_location' => 'Изписан на локация',
         'image_filename' => 'Име на файл с изображение',
@@ -534,6 +544,9 @@ return [
     'action_source' => 'Източник на действие',
     'or' => 'или',
     'url'                   => 'URL адрес',
+    'phone'                   => 'Телефон',
+    'fax'                   => 'Факс',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Редактирайте набор от полета и настройки',
     'permission_denied_superuser_demo' => 'Разрешението е отказано. Не можете да актуализирате потребителска информация за суперадминистратори в демо версията.',
     'pwd_reset_not_sent' => 'Потребителят не е активиран, синхронизиран е с LDAP или няма имейл адрес',
@@ -578,6 +591,9 @@ return [
     'user_managed_passwords_allow' => 'Позволяване на потребителите да управляват собствените си пароли',
     'from' => 'От',
     'by' => 'От',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +641,32 @@ return [
             'error' => 'Създаването на производителите върна грешка. Запис на производител вече съществува и това действие ще го презапише.|Създаването на производителите върна грешка. Има :count производителя вече създадени и това действие ще ги презапише.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
+    'depreciation_options' => [
+        'amount' => 'Amount',
+        'percent' => 'Percentage',
+    ],
+
+    'months_plural' => '1 month|:count months',
+
 
 ];

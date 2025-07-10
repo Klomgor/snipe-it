@@ -9,6 +9,8 @@ return [
     'ad_append_domain_help'     => 'El usuario no necesita escribir "usuario@dominio.local", puede escribir únicamente "usuario".',
     'admin_cc_email'            => 'Copiar en correo electrónico',
     'admin_cc_email_help'       => 'Enviar una copia de los correos electrónicos de checkin/checkout a esta dirección.',
+    'admin_cc_always' => 'Always send copy upon checkin/checkout',
+    'admin_cc_when_acceptance_required' => 'Only send copy upon checkout if acceptance is required',
     'admin_settings'            => 'Configuración de administración',
     'is_ad'				        => 'Este es un servidor de Directorio Activo',
     'alerts'                	=> 'Alertas',
@@ -155,6 +157,7 @@ return [
     'scope_locations_fmcs_support_text'  => 'Lugares de Alcance con soporte completo para múltiples empresas',
     'scope_locations_fmcs_support_help_text'  => 'Restringir las ubicaciones a su empresa seleccionada.',
     'scope_locations_fmcs_check_button' => 'Comprobar compatibilidad',
+    'scope_locations_fmcs_test_needed' => 'Please Check Compatibility to enable this',
     'scope_locations_fmcs_support_disabled_text'  => 'Esta opción está deshabilitada porque tienes lugares en conflicto establecidos para :count o más elementos.',
     'show_in_model_list'   => 'Mostrar en menús desplegables de modelos',
     'optional'					=> 'opcional',
@@ -401,6 +404,9 @@ return [
     'due_checkin_days_help' => '¿Cuántos días antes de la fecha prevista de ingreso de un activo debe figurar en la página «Próximos a ingresar»?',
     'no_groups' => 'Todavía no se han creado grupos. Para agregar uno, visite<code>Configuración de administración > Grupos de permisos</code>.',
     'text' => 'Texto',
+    'manager_view' => 'Manager View',
+    'manager_view_enabled_text' => 'Enable Manager View',
+    'manager_view_enabled_help' => 'Allow managers to view assigned items to their direct and indirect reports in their account view.',
 
     'username_formats' => [
         'username_format'		=> 'Formato del nombre de usuario',
@@ -410,7 +416,7 @@ return [
         'filastname_format'			=> 'Inicial del nombre y apellido (jsmith)',
         'lastnamefirstinitial_format' =>  'Apellido e inicial del nombre (smithj)',
         'firstname_lastname_underscore_format' => 'First Name Last Name (jane_smith)',
-        'firstinitial.lastname' => 'Inicial del nombre y apellido (j.smith)',
+        'firstinitial_lastname' => 'Inicial del nombre y apellido (j.smith)',
         'lastname_firstinitial' => 'Apellido e inicial del nombre (smith_j)',
         'lastname_dot_firstinitial_format' => 'Apellido e inicial del nombre (smithj.)',
         'firstnamelastname'     => 'Nombre y apellido (janesmith)',
@@ -426,7 +432,7 @@ return [
         'filastname_format'			=> 'Inicial del nombre y apellido (jsmith@ejemplo.com)',
         'lastnamefirstinitial_format' =>  'Apellido e inicial del nombre (smithj@example.com)',
         'firstname_lastname_underscore_format' => 'Nombre y apellido (jane_smith@example.com)',
-        'firstinitial.lastname' => 'Inicial del nombre y apellido (j.smith@ejemplo.com)',
+        'firstinitial_lastname' => 'Inicial del nombre y apellido (j.smith@ejemplo.com)',
         'lastname_firstinitial' => 'Apellido e inicial del nombre (smith_j@ejemplo.com)',
         'lastname_dot_firstinitial_format' => 'Apellido e inicial del nombre (smithj@example.com)',
         'firstnamelastname'     => 'Nombre y apellido (janesmith@example.com)',
@@ -484,6 +490,7 @@ return [
         'php_overview'      => 'phpinfo, sistema, información',
         'purge'             => 'eliminar permanentemente',
         'security'          => 'contraseña, contraseñas, requisitos, dos factores, contraseñas comunes, inicio de sesión remoto, autenticación',
+        'notifications'     => 'alerts, email, notifications, audit, threshold, email alerts, cc',
     ],
 
 ];

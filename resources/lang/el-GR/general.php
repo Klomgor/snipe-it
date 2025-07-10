@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Αξεσουάρ',
     'accessory_report'		=> 'Αναφορά αξεσουάρ',
     'action'                => 'Ενέργεια',
+    'action_date'			=> 'Action Date',
     'activity_report'		=> 'Έκθεση Δραστηριότητας',
     'address'				=> 'Διεύθυνση',
     'admin'					=> 'Ρυθμίσεις Διαχειριστή',
+    'admin_user'			=> 'Admin User',
     'admin_tooltip'			=> 'This user has admin privileges',
     'superuser'				=> 'Superuser',
     'superuser_tooltip'		=> 'This user has superuser privileges',
@@ -223,11 +225,13 @@ return [
     'order_number'          => 'Αριθμός παραγγελίας',
     'only_deleted'          => 'Μόνο Διαγραμμένα Περιουσιακά Στοιχεία',
     'page_menu'				=> 'Εμφάνιση _MENU_ αντικειμένων',
+    'page_error'            => 'Could not determine previous page. Redirected to homepage.',
     'pagination_info'		=> 'Εμφάνιση _START_ σε _END_ από _TOTAL_ στοιχεία',
     'pending'				=> 'Εκκρεμεί',
     'people'				=> 'Άτομα',
     'per_page'				=> 'Αποτελέσματα ανά σελίδα',
     'previous'				=> 'Προηγούμενο',
+    'previous_page'			=> 'Previous Page',
     'processing'			=> 'Επεξεργάζεται',
     'profile'				=> 'Το προφίλ σας',
     'purchase_cost'                              => 'Κόστος αγοράς',
@@ -249,7 +253,7 @@ return [
     'requested'				=> 'Ζητήθηκαν',
     'requested_date'        => 'Ημερομηνία Που Ζητήθηκε',
     'requested_assets'      => 'Ζητούμενα Περιουσιακά Στοιχεία',
-    'requested_assets_menu' => 'Ζητούμενα Περιουσιακά Στοιχεία',
+    'requested_assets_menu' => 'Requested Items',
     'request_canceled'      => 'Το αίτημα ακυρώθηκε',
     'request_item'          => 'Request this item',
     'external_link_tooltip' => 'External link to',
@@ -287,6 +291,8 @@ return [
     'status_label'			=> 'Status Label',
     'status'    			=> 'Κατάσταση',
     'accept_eula'           => 'Συμφωνία Αποδοχής',
+    'eula'                  => 'EULAs',
+    'eula_long'             => 'End-User License Agreements',
     'show_or_hide_eulas' => 'Show/Hide EULAs',
     'supplier'              => 'Προμηθευτής',
     'suppliers'  			=> 'Προμηθευτές',
@@ -303,10 +309,11 @@ return [
     'type'  				=> 'Είδος',
     'undeployable'			=> 'Δεν μπορεί να αναπτυχθεί',
     'unknown_admin'			=> 'Άγνωστο Admin',
+    'unknown_user'          => 'Unknown User',
     'username'              => 'Όνομα χρήστη',
     'update'                => 'Ενημέρωση',
     'updating_item' => 'Updating :item',
-    'upload_filetypes_help'      => 'Επιτρεπόμενοι τύποι αρχείων είναι png, gif, jpg, jpeg, doc, docx, pdf, xls, xlsx, txt, lic, xml, zip, rtf και rar. Το μέγιστο επιτρεπόμενο μέγεθος upload είναι :size.',
+    'upload_filetypes_help' => 'Allowed filetypes are: :allowed_filetypes. Max upload size allowed is :size.',
     'uploaded'              => 'Ανέβηκε',
     'user'					=> 'Χρήστης',
     'accepted'			    => 'αποδεκτή',
@@ -316,8 +323,10 @@ return [
     'unaccepted_asset_report' => 'Μη αποδεκτά πάγια',
     'users'                 => 'Χρήστες',
     'viewall'				=> 'Προβολή Όλων',
-    'viewassets'  			=> 'Προβολή των Assigned Assets',
-    'viewassetsfor'         => 'Προβολή παγίων για :name',
+    'viewassets'  			=> 'View Assigned Items',
+    'viewassetsfor'         => 'View Items for :name',
+    'view_user_assets'      => 'View Items Assigned to User',
+    'me'                    => 'Me',
     'website'               => 'Τοποθεσία web',
     'welcome'				=> 'Καλώς ήρθατε, %name',
     'years'					=> 'έτη',
@@ -507,6 +516,7 @@ return [
         'manager_last_name' => 'Επώνυμο Διαχειριστή',
         'manager_full_name' => 'Πλήρες Όνομα Διαχειριστή',
         'manager_username' => 'Όνομα Χρήστη Διαχειριστή',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Τύπος Αγοράς',
         'checkout_location' => 'Αγορά σε τοποθεσία',
         'image_filename' => 'Όνομα Αρχείου Εικόνας',
@@ -534,6 +544,9 @@ return [
     'action_source' => 'Πηγή Ενέργειας',
     'or' => 'ή',
     'url'                   => 'URL',
+    'phone'                   => 'Τηλέφωνο',
+    'fax'                   => 'Φαξ',
+    'contact'                   => 'Contact',
     'edit_fieldset' => 'Επεξεργασία πεδίων και επιλογών',
     'permission_denied_superuser_demo' => 'Δεν επιτρέπεται η χορήγηση άδειας. Δεν μπορείτε να ενημερώσετε τις πληροφορίες χρήστη για superadmins στο demo.',
     'pwd_reset_not_sent' => 'Ο χρήστης δεν είναι ενεργοποιημένος, είναι LDAP συγχρονισμένος ή δεν έχει διεύθυνση ηλεκτρονικού ταχυδρομείου',
@@ -578,6 +591,9 @@ return [
     'user_managed_passwords_allow' => 'Allow users to manage their own passwords',
     'from' => 'From',
     'by' => 'Από',
+    'version' => 'Version',
+    'build' => 'build',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> is open source software, made with <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">love</span> by <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -625,5 +641,32 @@ return [
             'error' => 'Could not seed manufacturers. A manufacturer record already exists and seeding would overwrite it.|Could not seed manufacturers. :count manufacturer records already exist and seeding would overwrite them.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
+    'depreciation_options' => [
+        'amount' => 'Amount',
+        'percent' => 'Percentage',
+    ],
+
+    'months_plural' => '1 month|:count months',
+
 
 ];

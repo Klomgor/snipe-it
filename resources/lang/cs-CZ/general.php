@@ -8,9 +8,11 @@ return [
     'accessory'				=> 'Příslušenství',
     'accessory_report'		=> 'Zpráva o doplňcích',
     'action'                => 'Akce',
+    'action_date'			=> 'Datum provedení',
     'activity_report'		=> 'Report aktivity',
     'address'				=> 'Adresa',
     'admin'					=> 'Nastavení správce',
+    'admin_user'			=> 'Administrátor',
     'admin_tooltip'			=> 'Tento uživatel má administrátorská oprávnění',
     'superuser'				=> 'Superuživatel',
     'superuser_tooltip'		=> 'Tento uživatel má superuživatelská oprávnění',
@@ -223,11 +225,13 @@ return [
     'order_number'          => 'Číslo objednávky',
     'only_deleted'          => 'Pouze odstraněné položky',
     'page_menu'				=> 'Zobrazuji _MENU_ položky',
+    'page_error'            => 'Could not determine previous page. Redirected to homepage.',
     'pagination_info'		=> 'Zobrazuji  _START_ to _END_ of _TOTAL_ položek',
     'pending'				=> 'Čeká na vyřízení',
     'people'				=> 'Lidé',
     'per_page'				=> 'Výsledků na stránku',
     'previous'				=> 'Předchozí',
+    'previous_page'			=> 'Previous Page',
     'processing'			=> 'Pracuji',
     'profile'				=> 'Váš profil',
     'purchase_cost'                              => 'Nákupní cena',
@@ -249,7 +253,7 @@ return [
     'requested'				=> 'Požadováno',
     'requested_date'        => 'Požadované datum',
     'requested_assets'      => 'Vyžádaný majetek',
-    'requested_assets_menu' => 'Vyžádaný majetek',
+    'requested_assets_menu' => 'Požadované položky',
     'request_canceled'      => 'Žádost zrušena',
     'request_item'          => 'Požádat o tuto položku',
     'external_link_tooltip' => 'Externí odkazy',
@@ -287,6 +291,8 @@ return [
     'status_label'			=> 'Označení stavu',
     'status'    			=> 'Stav',
     'accept_eula'           => 'Licenční podmínky',
+    'eula'                  => 'Licenční ujednání',
+    'eula_long'             => 'Licenční smlouva s koncovým uživatelem',
     'show_or_hide_eulas' => 'Zobrazit/schovat EULA',
     'supplier'              => 'Dodavatel',
     'suppliers'  			=> 'Dodavatelé',
@@ -303,10 +309,11 @@ return [
     'type'  				=> 'Typ',
     'undeployable'			=> 'Ne-přiřaditelné',
     'unknown_admin'			=> 'Neznámy správce',
+    'unknown_user'          => 'Neznámý uživatel',
     'username'              => 'Uživatelské jméno',
     'update'                => 'Aktualizace',
     'updating_item' => 'Probíhá aktualizace položky :item',
-    'upload_filetypes_help'      => 'Podporované typy souborů jsou png, gif, jpg, jpeg, doc, docx, pdf, xls, txt, lic, xlsx, xml, rtf, zip, a rar. Velikost může být až :size.',
+    'upload_filetypes_help' => 'Allowed filetypes are: :allowed_filetypes. Max upload size allowed is :size.',
     'uploaded'              => 'Nahráno',
     'user'					=> 'Uživatel',
     'accepted'			    => 'přijato',
@@ -317,7 +324,9 @@ return [
     'users'                 => 'Uživatelé',
     'viewall'				=> 'Zobrazit vše',
     'viewassets'  			=> 'Zobrazit přiřazený majetek',
-    'viewassetsfor'         => 'Zobrazit majetky pro :name',
+    'viewassetsfor'         => 'Zobrazit položky pro :name',
+    'view_user_assets'      => 'Zobrazit položky přiřazené uživateli',
+    'me'                    => 'Já',
     'website'               => 'Webová stránka',
     'welcome'				=> 'Vítej, :name',
     'years'					=> 'roky',
@@ -509,6 +518,7 @@ return [
         'manager_last_name' => 'Příjmení nadřízeného',
         'manager_full_name' => 'Celé jméno správce',
         'manager_username' => 'Uživatelské jméno správce',
+        'manager_employee_num' => 'Manager Employee Number',
         'checkout_type' => 'Typ pokladny',
         'checkout_location' => 'Rezervovat na umístění',
         'image_filename' => 'Název souboru obrázku',
@@ -536,6 +546,9 @@ return [
     'action_source' => 'Zdroj akcí',
     'or' => 'nebo',
     'url'                   => 'URL',
+    'phone'                   => 'Telefon',
+    'fax'                   => 'Fax',
+    'contact'                   => 'Kontakt',
     'edit_fieldset' => 'Upravit pole a možnosti sady polí',
     'permission_denied_superuser_demo' => 'Oprávnění bylo odepřeno. Nemůžete aktualizovat informace o uživateli pro superadminy na demo.',
     'pwd_reset_not_sent' => 'Uživatel není aktivován, LDAP je synchronizován, nebo nemá e-mailovou adresu',
@@ -580,6 +593,9 @@ return [
     'user_managed_passwords_allow' => 'Povolit uživatelům správu vlastních hesel',
     'from' => 'Od',
     'by' => 'Vytvořil',
+    'version' => 'Verze',
+    'build' => 'sestavení',
+    'footer_credit' => '<a target="_blank" href="https://snipeitapp.com" rel="noopener">Snipe-IT</a> Je open-source software, vytvořený s <i class="fa fa-heart" aria-hidden="true" style="color: #a94442; font-size: 10px" /></i><span class="sr-only">láskou</span> od <a href="https://bsky.app/profile/snipeitapp.com" rel="noopener">@snipeitapp.com</a>.',
 
 // Add form placeholders here
     'placeholders' => [
@@ -627,5 +643,32 @@ return [
             'error' => 'Výrobce se nepodařilo načíst – již nějaký existuje a nový by ho přepsal.|Výrobce se nepodařilo načíst – existuje už :count záznamů a došlo by k jejich přepsání.',
         ],
     ],
+
+    'file_upload_status' => [
+
+        'upload' => [
+            'success' => 'File successfully uploaded |:count files successfully uploaded',
+            'error' => 'File upload failed |:count file uploads failed',
+        ],
+
+        'delete' => [
+            'success' => 'File successfully deleted |:count files successfully deleted',
+            'error' => 'File deletion failed |:count file deletions failed',
+        ],
+
+        'file_not_found' => 'The selected file was not found on server',
+        'invalid_id' => 'That file ID is invalid',
+        'invalid_object' => 'That object ID is invalid',
+        'nofiles' => 'No files were included for upload',
+        'confirm_delete' => 'Are you sure you want to delete this file?',
+    ],
+
+    'depreciation_options' => [
+        'amount' => 'Amount',
+        'percent' => 'Percentage',
+    ],
+
+    'months_plural' => '1 month|:count months',
+
 
 ];
